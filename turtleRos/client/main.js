@@ -124,6 +124,12 @@
     var converx = (posx/11.0888) * 600
     var convery = (1 - (posy/11.0888)) * 600
 
+    // Initial points
+    if(points.x == 0 && points.y == 0) {
+      points.x = converx;
+      points.y = convery;
+    }
+
     // for draw last points with news
     if (converx != points.x && convery != points.y) {
       var c = document.getElementById("myCanvas");
@@ -140,9 +146,5 @@
       points.y = convery;
     }
 
-    if(points.x == 0 && points.y == 0) {
-      points.x = converx;
-      points.y = convery;
-    }
   }
 
