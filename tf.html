@@ -16,14 +16,17 @@
     url : 'ws://localhost:9090'
   });
 
+  // established the connection with the server
   ros.on('connection', function() {
     console.log('Connected to websocket server.');
   });
 
+  // if an error in the connection
   ros.on('error', function(error) {
     console.log('Error connecting to websocket server: ', error);
   });
 
+  // if the connection close
   ros.on('close', function() {
     console.log('Connection to websocket server closed.');
   });
@@ -59,7 +62,7 @@
     }
   });
 
-  // turtle position
+  // turtle position, we want to know only the x,y cordenates
   var actualPosition = {
     x : 0.0,
     y : 0.0
@@ -83,7 +86,7 @@
   }
 
 
-  // draw a star
+  // draw a star, hardcoded
   drawStar = function() {
     setTimeout(function(){
       line(0.0, 1.0);
@@ -113,7 +116,7 @@
       line(0.0, -2.8);
     }, 9 * seg);
     setTimeout(function(){
-        line(2.5, 0.0)
+        line(3.0, 0.0)
     }, 10 * seg);
   }
 
@@ -133,6 +136,7 @@
 
 
 </script>
+</head>
 <body>
 
   <canvas id="myCanvas" width="500px" height="500px" style="background-color:lightgrey;">
@@ -140,7 +144,6 @@
   </canvas>
   <button onclick="drawStar()">Draw</button>
 </body>
-</head>
 
 </html>
 
