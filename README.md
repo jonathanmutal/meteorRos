@@ -22,10 +22,15 @@ $ rosrun turtlesim turtlesim_node
 $ roslaunch rosbridge_server rosbridge_websocket.launch
 ```
 
-##### 2. Meteoro:
-
-
+##### 2. METEORO:
++ In a terminal run the server in localhost with port 3000:
+```
+$ meteor
+```
++ Open your web browser and go to http://localhost:3000 to see the app running
 
 
 ###### Bibliografy :
++ [move turtle](http://wiki.ros.org/ROS/Tutorials/UnderstandingTopics)
 + [roslibsjs tutorial](http://wiki.ros.org/roslibjs/Tutorials/BasicRosFunctionality)
++ [run meteoro](https://www.meteor.com/tutorials/blaze/creating-an-app)
