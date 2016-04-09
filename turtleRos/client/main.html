@@ -1,25 +1,14 @@
 <head>
+  <script type="text/javascript" src="http://cdn.robotwebtools.org/EventEmitter2/current/eventemitter2.min.js"></script>
+  <script type="text/javascript" src="http://cdn.robotwebtools.org/roslibjs/current/roslib.min.js"></script>
   <title>simple</title>
 </head>
 
 <body>
   <h1>Welcome to Meteor!</h1>
+    <canvas id="myCanvas" width="600px" height="600px" style="background-color:lightgrey;">
+        Your browser does not support the HTML5 canvas tag.
+    </canvas>
+  <button onclick="drawStar()">Draw</button>
 
-  {{> hello}}
-  {{> info}}
 </body>
-
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
-</template>
-
-<template name="info">
-  <h2>Learn Meteor!</h2>
-  <ul>
-    <li><a href="https://www.meteor.com/try">Do the Tutorial</a></li>
-    <li><a href="http://guide.meteor.com">Follow the Guide</a></li>
-    <li><a href="https://docs.meteor.com">Read the Docs</a></li>
-    <li><a href="https://forums.meteor.com">Discussions</a></li>
-  </ul>
-</template>
