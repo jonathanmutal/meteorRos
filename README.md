@@ -23,12 +23,13 @@ $ roslaunch rosbridge_server rosbridge_websocket.launch
 ```
 
 ##### 2. METEORO:
-+ In a terminal run the server in localhost with port 3000:
++ In the aplication folder open a new terminal and run the server in localhost with port 3000:
 ```
 $ meteor
 ```
 + Open your web browser and go to http://localhost:3000 to see the app running
 
++ Click in the draw bottom
 
 ###### Bibliografy :
 + [move turtle](http://wiki.ros.org/ROS/Tutorials/UnderstandingTopics)
